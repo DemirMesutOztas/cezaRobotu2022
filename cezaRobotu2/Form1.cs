@@ -261,7 +261,7 @@ namespace cezaRobotu2
 
                         mesaj += "Alt Limit: " + altlimit + "\r\n" + "Ürün Sınıfı: " + sinif + "\r\n" +
                                  "Halk Sağlığına Etkisi: " + hse + "\r\n" + "Tekrar Durumu: " + tekrar + "\r\n" +
-                                 "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + sinif + ") "+ "*" + "(" + hse + ")" + "*" + "(" + tekrar +")";
+                                 "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + sinif + ")" + "*" + "(" + hse + ")" + "*" + "(" + tekrar +")";
                     }
 
 
