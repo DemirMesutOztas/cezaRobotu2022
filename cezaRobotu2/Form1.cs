@@ -290,7 +290,7 @@ namespace cezaRobotu2
 
                     mesaj += "Alt Limit: " + altlimit + "\r\n" + "Ürün Sınıfı: " + sinif + "\r\n" +
                              "Tekrar Durumu: " + tekrar + "\r\n" +
-                             "Sonuç: " + altlimit + "*" + sinif + "*" + tekrar;
+                             "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + sinif + ")" + "*" + "(" + tekrar + ")";
 
                 }
                 else if (comboBox1.SelectedIndex == 21 || comboBox1.SelectedIndex == 29)
@@ -319,7 +319,7 @@ namespace cezaRobotu2
                                      "Aykırılık Seviyei: " + aykirilik + "\r\n" + "Halk Sağlığına Etkisi: " + hse +
                                      "\r\n" +
                                      "Tekrar Durumu: " + tekrar + "\r\n" +
-                                     "Sonuç: " + altlimit + "*" + sinif + "*" + aykirilik + "*" + hse + "*" + tekrar;
+                                     "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + sinif + ")" + "*" + "(" + aykirilik + ")" + "*" + "(" + hse + ")" + "*" + "(" + tekrar + ")";
                         }
 
 
@@ -336,7 +336,7 @@ namespace cezaRobotu2
 
                         mesaj += "Alt Limit: " + altlimit + "\r\n" + "Aykırılık Seviyesi: " + aykirilik + "\r\n" +
                                  "Tekrar Durumu: " + tekrar + "\r\n" +
-                                 "Sonuç: " + altlimit + "*" + aykirilik + "*" + tekrar;
+                                 "Sonuç: " + "(" + altlimit + ")" + "*" +  "(" + aykirilik + ")" + "*" + "(" + tekrar + ")";
                     }
 
                 }
@@ -357,7 +357,7 @@ namespace cezaRobotu2
 
                     mesaj += "Alt Limit: " + altlimit + "\r\n" +
                              "Tekrar Durumu: " + tekrar + "\r\n" +
-                             "Sonuç: " + altlimit + "*" + tekrar;
+                             "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + tekrar + ")";
                 }
 
                 foreach (Control clt in this.Controls)
