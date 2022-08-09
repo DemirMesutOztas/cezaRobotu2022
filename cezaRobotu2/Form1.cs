@@ -32,46 +32,40 @@ namespace cezaRobotu2
         public Form1()
         {
             InitializeComponent();
-            
-            
+
         }
 
         public void cezaLimitleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            
 
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-
             if (comboBox1.SelectedIndex == 0 || comboBox1.SelectedIndex == 14)
             {
-                
                 comboBox5.Enabled = false;
                 comboBox8.Enabled = false;
                 comboBox4.Enabled = true;
-                
                 comboBox7.Enabled = true;
                 comboBox3.Enabled = true;
 
-               
             }
           else if (comboBox1.SelectedIndex == 1 || comboBox1.SelectedIndex == 2 || comboBox1.SelectedIndex == 3 || comboBox1.SelectedIndex == 4 || comboBox1.SelectedIndex == 5
-                         || comboBox1.SelectedIndex == 8 || comboBox1.SelectedIndex == 10 || comboBox1.SelectedIndex == 11 || comboBox1.SelectedIndex == 13 || comboBox1.SelectedIndex == 15
-                         || comboBox1.SelectedIndex == 16 || comboBox1.SelectedIndex == 17 || comboBox1.SelectedIndex == 19 || comboBox1.SelectedIndex == 22
-                         || comboBox1.SelectedIndex == 23 || comboBox1.SelectedIndex == 24 || comboBox1.SelectedIndex == 25 || comboBox1.SelectedIndex == 28
-                         || comboBox1.SelectedIndex == 30 || comboBox1.SelectedIndex == 31 || comboBox1.SelectedIndex == 33 || comboBox1.SelectedIndex == 34
-                         || comboBox1.SelectedIndex == 35 || comboBox1.SelectedIndex == 39 || comboBox1.SelectedIndex == 41 || comboBox1.SelectedIndex == 42)
+                         || comboBox1.SelectedIndex == 8 || comboBox1.SelectedIndex == 10 || comboBox1.SelectedIndex == 11 || comboBox1.SelectedIndex == 13 
+                         || comboBox1.SelectedIndex == 15 || comboBox1.SelectedIndex == 16 || comboBox1.SelectedIndex == 17 || comboBox1.SelectedIndex == 19 
+                         || comboBox1.SelectedIndex == 22 || comboBox1.SelectedIndex == 23 || comboBox1.SelectedIndex == 24 || comboBox1.SelectedIndex == 25 
+                         || comboBox1.SelectedIndex == 28 || comboBox1.SelectedIndex == 30 || comboBox1.SelectedIndex == 31 || comboBox1.SelectedIndex == 33 
+                         || comboBox1.SelectedIndex == 34 || comboBox1.SelectedIndex == 35 || comboBox1.SelectedIndex == 39 || comboBox1.SelectedIndex == 41 
+                         || comboBox1.SelectedIndex == 42)
             {
                 comboBox4.Enabled = false;
                 comboBox5.Enabled = false;
                 comboBox8.Enabled = false;
                 comboBox7.Enabled = false;
                 comboBox3.Enabled = true;
-
 
             }
             else if (comboBox1.SelectedIndex == 21 || comboBox1.SelectedIndex == 29)
@@ -85,11 +79,11 @@ namespace cezaRobotu2
                     comboBox4.Enabled = false;
                 }
                 
-
                 comboBox3.Enabled = false;
                 comboBox8.Enabled = true;
                 comboBox7.Enabled = true;
                 comboBox5.Enabled = true;
+
             }
             else if ((comboBox1.SelectedIndex == 6 || comboBox1.SelectedIndex == 7 || comboBox1.SelectedIndex == 9 || comboBox1.SelectedIndex == 12
                           || comboBox1.SelectedIndex == 18 || comboBox1.SelectedIndex == 20 || comboBox1.SelectedIndex == 26 || comboBox1.SelectedIndex == 27
@@ -100,9 +94,7 @@ namespace cezaRobotu2
                 comboBox5.Enabled = false;
                 comboBox8.Enabled = false;
                 comboBox7.Enabled = false;
-                
                 comboBox3.Enabled = false;
-
             }
             
         }
@@ -264,9 +256,6 @@ namespace cezaRobotu2
                                  "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + sinif + ")" + "*" + "(" + hse + ")" + "*" + "(" + tekrar +")";
                     }
 
-
-
-
                 }
                 else if (comboBox1.SelectedIndex == 1 || comboBox1.SelectedIndex == 2 || comboBox1.SelectedIndex == 3 ||
                          comboBox1.SelectedIndex == 4 || comboBox1.SelectedIndex == 5
@@ -283,6 +272,7 @@ namespace cezaRobotu2
                 {
 
                     sonuc = altlimit * sinif * tekrar;
+
                     if (sonuc > ustlimit)
                     {
                         sonuc = ustlimit;
@@ -321,8 +311,6 @@ namespace cezaRobotu2
                                      "Tekrar Durumu: " + tekrar + "\r\n" +
                                      "Sonuç: " + "(" + altlimit + ")" + "*" + "(" + sinif + ")" + "*" + "(" + aykirilik + ")" + "*" + "(" + hse + ")" + "*" + "(" + tekrar + ")";
                         }
-
-
 
 
                     }
@@ -378,10 +366,8 @@ namespace cezaRobotu2
                     }
                 }
 
-
                 textBox2.Text = mesaj;
                 textBox1.Text = sonuc.ToString() + " Türk Lirası";
-
 
             }
             catch (System.ArgumentOutOfRangeException)
@@ -403,8 +389,6 @@ namespace cezaRobotu2
                     MessageBoxIcon.Warning);
             }
 
-            
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -427,7 +411,6 @@ namespace cezaRobotu2
 
                 }
             }
-
 
             textBox1.Clear();
             textBox2.Clear();
